@@ -1,94 +1,70 @@
 .footer {
-    background-color: #add8e6; /* Light blue footer */
-    color: #333; /* Darker text color for contrast */
-    padding: 40px 0; /* Padding for top and bottom */
-    position: relative; /* Position for hover effects */
+    padding: 40px 0; /* Top and bottom padding */
+    background-color: #e0f7fa; /* Light blue background */
+}
+
+.logo-slider {
+    display: flex; /* Flex layout for logos */
     overflow: hidden; /* Hide overflow */
+    white-space: nowrap; /* Keep logos in a single line */
+    animation: scroll 30s linear infinite; /* Scroll animation */
 }
 
-.footer-title {
-    font-size: 24px; /* Larger title font */
-    margin-bottom: 20px; /* Space below title */
-    font-weight: 700; /* Bold font */
-    text-transform: uppercase; /* Uppercase styling */
-}
-
-.logo-carousel {
-    overflow: hidden; /* Hide overflow for scrolling effect */
-    white-space: nowrap; /* Prevent line breaks */
-}
-
-.logo-wrapper {
-    display: inline-block; /* Keep logos in a row */
-    animation: scroll 20s linear infinite; /* Scrolling animation */
+.logo-item {
+    display: inline-block; /* Inline display for logos */
+    margin: 0 15px; /* Space between logos */
 }
 
 .brand-logo {
-    width: 100px; /* Fixed width for square logos */
-    height: 100px; /* Fixed height for square logos */
-    margin: 0 15px; /* Space between logos */
-    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover */
+    height: 60px; /* Consistent logo height */
+    transition: transform 0.3s ease; /* Smooth hover effect */
 }
 
 .brand-logo:hover {
-    transform: scale(1.1); /* Scale up on hover */
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3); /* Shadow effect on hover */
+    transform: scale(1.1); /* Slightly enlarge on hover */
 }
 
 .social-icons {
-    margin: 20px 0; /* Space above and below icons */
-}
-
-.social-title {
-    font-weight: 600; /* Bold weight for emphasis */
-    margin-bottom: 10px; /* Space below the social title */
-    text-transform: uppercase; /* Uppercase styling */
-}
-
-.social-icon-group {
-    display: flex; /* Flexbox for even spacing */
-    justify-content: center; /* Center icons */
+    margin-top: 15px; /* Space above social icons */
 }
 
 .social-icon {
     margin: 0 10px; /* Space between icons */
+    width: 60px; /* Fixed width for icons */
+    height: 60px; /* Fixed height for icons */
+    border-radius: 50%; /* Rounded icons */
+    background-color: #007bff; /* Blue background for better visibility */
+    color: #fff; /* White icon color */
+    text-align: center; /* Centering icon */
+    line-height: 60px; /* Center the icon vertically */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth hover effects */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Shadow for depth */
 }
 
-.icon {
-    width: 50px; /* Increased icon size for better visibility */
-    height: 50px; /* Maintain aspect ratio */
-    transition: transform 0.3s, box-shadow 0.3s; /* Smooth transition for hover */
-    border-radius: 50%; /* Make icons rounded */
-    background-color: rgba(255, 255, 255, 0.8); /* Light background for contrast */
-    padding: 10px; /* Padding for better spacing */
+.social-icon:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+    transform: scale(1.1); /* Slightly enlarge on hover */
 }
 
-.icon:hover {
-    transform: scale(1.1); /* Slightly enlarge icon on hover */
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5); /* Shadow effect on hover */
+.footer-text {
+    margin-top: 20px; /* Space above footer text */
+    font-size: 14px; /* Text size */
+    color: #666; /* Subtle text color */
 }
 
-/* Animation for scrolling */
+/* Animation for the logo slider */
 @keyframes scroll {
     0% { transform: translateX(0); }
     100% { transform: translateX(-100%); }
 }
 
-/* Full width adjustment for fluid container */
-.container-fluid {
-    width: 100%;
-    padding: 0 15px; /* Padding to match Bootstrap's container style */
-}
-
-/* Responsive adjustments */
-@media (max-width: 576px) {
+/* Responsive styles */
+@media (max-width: 768px) {
     .brand-logo {
-        width: 80px; /* Smaller logos on small screens */
-        height: 80px; /* Maintain aspect ratio */
+        height: 50px; /* Smaller logo height for mobile */
     }
-
-    .icon {
-        width: 40px; /* Smaller icon size */
-        height: 40px; /* Maintain aspect ratio */
+    .social-icon {
+        width: 50px; /* Smaller width for icons on mobile */
+        height: 50px; /* Smaller height for icons on mobile */
     }
 }
