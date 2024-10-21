@@ -1,26 +1,74 @@
-.about-section {
-    padding: 60px 0;
-    background-color: #f8f9fa;
-    border-top: 5px solid #007bff; /* Accent border */
+.about-us {
+    background-color: #f0f4f8; /* Light background color */
+    padding: 80px 20px; /* Increased padding for spaciousness */
+    border-top: 5px solid #007bff; /* Top border for style */
+    border-bottom: 5px solid #007bff; /* Bottom border for style */
 }
 
-.about-title {
-    font-size: 2rem; /* Smaller title */
-    margin-bottom: 15px;
-    font-weight: bold;
-    color: #333;
-    text-decoration: underline; /* Underline */
+.section-title {
+    font-size: 40px; /* Larger title for prominence */
+    margin-bottom: 10px; /* Space below title */
+    font-weight: 700; /* Bold font */
+    color: #007bff; /* Color matching brand theme */
 }
 
-.about-text {
-    font-size: 1rem; /* Slightly smaller text */
-    line-height: 1.5;
-    color: #555;
+.underline {
+    width: 120px; /* Width of the underline */
+    height: 4px; /* Height of the underline */
+    background-color: #007bff; /* Underline color */
+    margin: 0 auto 30px; /* Centered and space below */
+}
+
+.section-description {
+    font-size: 20px; /* Description size */
+    margin-bottom: 40px; /* Space below description */
+    color: #555; /* Subtle text color */
+    max-width: 700px; /* Limit width for better readability */
+    margin-left: auto;
+    margin-right: auto; /* Center the description */
+}
+
+.image-wrapper {
+    margin-top: 30px; /* Space above image */
 }
 
 .about-image {
-    border-radius: 15px;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-    max-width: 100%;
-    height: auto;
+    max-width: 100%; /* Responsive image */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Enhanced shadow for depth */
+}
+
+.mission-statement {
+    margin-top: 50px; /* Space above mission statement */
+    text-align: left; /* Align text to the left for emphasis */
+    max-width: 600px; /* Limit width for better readability */
+    margin-left: auto;
+    margin-right: auto; /* Center the mission statement */
+}
+
+.mission-statement h3 {
+    font-size: 28px; /* Mission statement title size */
+    color: #007bff; /* Color matching brand theme */
+    margin-bottom: 10px; /* Space below title */
+}
+
+.mission-statement p {
+    font-size: 16px; /* Description size */
+    color: #666; /* Lighter text color for descriptions */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .section-title {
+        font-size: 30px; /* Smaller title on small screens */
+    }
+
+    .section-description {
+        font-size: 18px; /* Smaller description on small screens */
+    }
+
+    .mission-statement h3 {
+        font-size: 24px; /* Smaller mission title */
+    }
 }

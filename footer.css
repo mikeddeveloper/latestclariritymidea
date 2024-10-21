@@ -1,0 +1,94 @@
+.footer {
+    background-color: #add8e6; /* Light blue footer */
+    color: #333; /* Darker text color for contrast */
+    padding: 40px 0; /* Padding for top and bottom */
+    position: relative; /* Position for hover effects */
+    overflow: hidden; /* Hide overflow */
+}
+
+.footer-title {
+    font-size: 24px; /* Larger title font */
+    margin-bottom: 20px; /* Space below title */
+    font-weight: 700; /* Bold font */
+    text-transform: uppercase; /* Uppercase styling */
+}
+
+.logo-carousel {
+    overflow: hidden; /* Hide overflow for scrolling effect */
+    white-space: nowrap; /* Prevent line breaks */
+}
+
+.logo-wrapper {
+    display: inline-block; /* Keep logos in a row */
+    animation: scroll 20s linear infinite; /* Scrolling animation */
+}
+
+.brand-logo {
+    width: 100px; /* Fixed width for square logos */
+    height: 100px; /* Fixed height for square logos */
+    margin: 0 15px; /* Space between logos */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover */
+}
+
+.brand-logo:hover {
+    transform: scale(1.1); /* Scale up on hover */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3); /* Shadow effect on hover */
+}
+
+.social-icons {
+    margin: 20px 0; /* Space above and below icons */
+}
+
+.social-title {
+    font-weight: 600; /* Bold weight for emphasis */
+    margin-bottom: 10px; /* Space below the social title */
+    text-transform: uppercase; /* Uppercase styling */
+}
+
+.social-icon-group {
+    display: flex; /* Flexbox for even spacing */
+    justify-content: center; /* Center icons */
+}
+
+.social-icon {
+    margin: 0 10px; /* Space between icons */
+}
+
+.icon {
+    width: 50px; /* Increased icon size for better visibility */
+    height: 50px; /* Maintain aspect ratio */
+    transition: transform 0.3s, box-shadow 0.3s; /* Smooth transition for hover */
+    border-radius: 50%; /* Make icons rounded */
+    background-color: rgba(255, 255, 255, 0.8); /* Light background for contrast */
+    padding: 10px; /* Padding for better spacing */
+}
+
+.icon:hover {
+    transform: scale(1.1); /* Slightly enlarge icon on hover */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5); /* Shadow effect on hover */
+}
+
+/* Animation for scrolling */
+@keyframes scroll {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-100%); }
+}
+
+/* Full width adjustment for fluid container */
+.container-fluid {
+    width: 100%;
+    padding: 0 15px; /* Padding to match Bootstrap's container style */
+}
+
+/* Responsive adjustments */
+@media (max-width: 576px) {
+    .brand-logo {
+        width: 80px; /* Smaller logos on small screens */
+        height: 80px; /* Maintain aspect ratio */
+    }
+
+    .icon {
+        width: 40px; /* Smaller icon size */
+        height: 40px; /* Maintain aspect ratio */
+    }
+}

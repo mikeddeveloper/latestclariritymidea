@@ -101,3 +101,10 @@ body {
         font-size: 0.95rem;
     }
 }
+.logo {
+    width: 50px; /* Adjust width as needed */
+    height: 50px; /* Keep height equal for round shape */
+    object-fit: cover; /* Ensures the image covers the area */
+    border-radius: 50%; /* Make the logo rounded */
+    margin-right: 10px; /* Space between logo and text */
+}
