@@ -1,0 +1,103 @@
+/* General Styling */
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    background-color: #f2f2f2;
+    color: #333;
+}
+
+/* Section Title Styling */
+.section-title {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #333;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    position: relative;
+    display: inline-block;
+    padding-bottom: 10px;
+    margin-bottom: 40px;
+}
+
+/* Underline for Section Title */
+.section-title::after {
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 3px;
+    background-color: #007bff;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* Service Card Styling */
+#services {
+    background-color: #fff;
+    border-radius: 12px;
+    padding: 60px 0;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.service-card {
+    border: none;
+    border-radius: 12px;
+    background: #fff;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    padding: 40px 20px;
+}
+
+.service-card:hover {
+    transform: translateY(-15px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
+}
+
+.service-icon {
+    font-size: 60px;
+    color: #007bff;
+    margin-bottom: 25px;
+    transition: color 0.3s ease;
+}
+
+.service-card:hover .service-icon {
+    color: #00bfff;
+}
+
+.card-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.card-text {
+    font-size: 1rem;
+    color: #666;
+    line-height: 1.6;
+    padding: 0 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    h2 {
+        font-size: 2rem;
+    }
+
+    .service-card {
+        margin-bottom: 30px;
+    }
+
+    .service-icon {
+        font-size: 50px;
+    }
+
+    .card-title {
+        font-size: 1.3rem;
+    }
+
+    .card-text {
+        font-size: 0.95rem;
+    }
+}

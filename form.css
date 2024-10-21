@@ -1,0 +1,71 @@
+body {
+    background: linear-gradient(135deg, #e0f7fa 0%, #f0f4f8 100%);
+    font-family: 'Roboto', sans-serif;
+}
+
+.contact-form {
+    max-width: 600px; /* Increased max width for a spacious look */
+    margin: 80px auto; /* More margin for vertical space */
+    padding: 40px;
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+}
+
+.contact-form h2 {
+    margin-bottom: 10px;
+    color: #007bff; /* Title color */
+    font-weight: 700; /* Bold weight for emphasis */
+}
+
+.contact-form p {
+    margin-bottom: 30px;
+    color: #555;
+    font-style: italic; /* Italic style for emphasis */
+}
+
+.contact-form .form-group label {
+    font-weight: bold; /* Bold labels */
+    color: #333; /* Label color */
+}
+
+.contact-form .form-control {
+    border-radius: 10px; /* Rounded input fields */
+    border: 2px solid #ced4da; /* Custom border color */
+    transition: border-color 0.3s; /* Smooth transition for border */
+}
+
+.contact-form .form-control:focus {
+    border-color: #007bff; /* Border color on focus */
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Shadow on focus */
+}
+
+.contact-form .btn {
+    border-radius: 10px; /* Rounded button */
+    background-color: #007bff; /* Button color */
+    border: none; /* Remove border */
+    padding: 12px; /* Increased padding */
+    font-weight: bold; /* Bold text */
+    transition: background-color 0.3s; /* Smooth transition for hover */
+}
+
+.contact-form .btn:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+}
+
+.contact-form .fas.fa-camera {
+    color: #007bff; /* Icon color */
+    animation: bounce 1s infinite; /* Simple bounce animation */
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-10px);
+    }
+    60% {
+        transform: translateY(-5px);
+    }
+}
