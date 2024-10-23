@@ -1,0 +1,68 @@
+body {
+    background-color: #f4f4f4;
+    font-family: 'Arial', sans-serif;
+    overflow: hidden;
+}
+
+header {
+    position: relative;
+    z-index: 1;
+    background: linear-gradient(to right, #343a40, #495057);
+}
+
+header h1 {
+    font-size: 2.5rem;
+}
+
+.header-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('https://www.transparenttextures.com/patterns/asfalt-light.png');
+    opacity: 0.1;
+    animation: move-bg 10s linear infinite;
+}
+
+@keyframes move-bg {
+    0% { background-position: 0 0; }
+    100% { background-position: 100% 0; }
+}
+
+.card {
+    border: none;
+    border-radius: 15px;
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.card-img-top {
+    height: 220px;
+    object-fit: cover;
+}
+
+.card-body {
+    text-align: center;
+    padding: 20px;
+}
+
+.card-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.card-text {
+    font-size: 1rem;
+    color: #555;
+    font-style: italic;
+}
+.container mt-5{
+    position: center;
+}
