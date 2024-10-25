@@ -28,7 +28,10 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-    <link rel="stylesheet" href="footer.css"> 
+    <link rel="stylesheet" href="sharp.css"> 
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+   <link rel="stylesheet" href="video.css">
 </head>
 <body>
 
@@ -50,10 +53,10 @@
                 <a class="nav-link" href="student.html">Academy</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Services</a>
+                <a class="nav-link" href="index.html">Services</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Contact</a>
+                <a class="nav-link" href="index.html">Contact</a>
             </li>
         </ul>
     </div>
@@ -145,6 +148,44 @@
         </div>
     </div>
 </section>
+<div class="container text-center video-showcase">
+    <h2>Video Showcase</h2>
+    <div class="row video-container">
+        <div class="col-md-3">
+            <div class="video-item">
+                <video autoplay muted loop>
+                    <source src="video/CLARITY 1.mp4" type="video/mp4"> <!-- Replace with your video source -->
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="video-item">
+                <video autoplay muted loop>
+                    <source src="video/clarity2.mp4" type="video/mp4"> <!-- Replace with your video source -->
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="video-item">
+                <video autoplay muted loop>
+                    <source src="video/clarity 3.mp4" type="video/mp4"> <!-- Replace with your video source -->
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="video-item">
+                <video autoplay muted loop>
+                    <source src="video/clarity 4.mp4" type="video/mp4"> <!-- Replace with your video source -->
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </div>
+    </div>
+</div>
+
 <br>
 <br>
 <div class="container testimonials-section">
@@ -199,22 +240,23 @@
         <h2>Contact Us</h2>
         <p>We’d love to hear about your event!</p>
     </div>
-    <form>
+    <form action="https://formspree.io/f/myzyzboj" method="POST">
+        
         <div class="form-group">
             <label for="name">Name</label>
-            <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
+            <input type="text" class="form-control" id="name"name="name" placeholder="Enter your name" required>
         </div>
         <div class="form-group">
             <label for="email">Email</label>
-            <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+            <input type="email" class="form-control" id="email"name="email" placeholder="Enter your email" required>
         </div>
         <div class="form-group">
             <label for="phone">Phone</label>
-            <input type="tel" class="form-control" id="phone" placeholder="Enter your phone number" required>
+            <input type="tel" class="form-control" id="phone"name="phone" placeholder="Enter your phone number" required>
         </div>
         <div class="form-group">
             <label for="event">Event Type</label>
-            <select class="form-control" id="event" required>
+            <select class="form-control" id="event" name="event" required>
                 <option value="">Select your event</option>
                 <option value="wedding">Wedding</option>
                 <option value="corporate">Corporate Event</option>
@@ -238,35 +280,46 @@
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
-<footer class="footer bg-light-blue">
-    <div class="container text-center">
-        <h4 class="mb-4">Brands We've Worked With</h4>
-        <div class="logo-slider">
-            <div class="logo-item"><img src="image/Google.png" alt="Brand 1" class="brand-logo"></div>
-            <div class="logo-item"><img src="image/netflix.png" alt="Brand 2" class="brand-logo"></div>
-            <div class="logo-item"><img src="image/hollandia.png" alt="Brand 3" class="brand-logo"></div>
-            <div class="logo-item"><img src="image/Cadbury Bournvita.jpeg" alt="Brand 4" class="brand-logo"></div>
-            <div class="logo-item"><img src="image/iroko.png" alt="Brand 5" class="brand-logo"></div>
-            <div class="logo-item"><img src="image/lonart.jpeg" alt="Brand 6" class="brand-logo"></div>
-            <div class="logo-item"><img src="image/windflower.png" alt="Brand 7" class="brand-logo"></div>
-            <div class="logo-item"><img src="image/download (2).jpeg" alt="Brand 8" class="brand-logo"></div>
-            <div class="logo-item"><img src="image/action aid.jpeg" alt="Brand 9" class="brand-logo"></div>
-            <div class="logo-item"><img src="image/yellow brick.jpeg" alt="Brand 10" class="brand-logo"></div>
-        </div>
-        
-        <h4 class="mt-4">Connect with Us</h4>
-        <div class="social-icons">
-            <a href="https://www.facebook.com/claritystudios?mibextid=ZbWKwL" class="social-icon"><i class="fab fa-facebook-f"></i></a>
-            <a href="https://www.instagram.com/claritystudios1?igsh=ZGUzMzM3NWJiOQ==" class="social-icon"><i class="fab fa-instagram"></i></a>
-            <a href="https://wa.link/ucc3fn" class="social-icon"><i class="fab fa-whatsapp"></i></a>
-            <a href="https://www.instagram.com/claritystudios1?igsh=ZGUzMzM3NWJiOQ==" class="social-icon"><i class="fab fa-instagram"></i></a>
-        </div>
-
-        <p class="footer-text mt-3">
-            &copy; 2024 Clarity Studio. All Rights Reserved.
-        </p>
+<div class="footer">
+    <h3>Clarity Studio</h3>
+    <p class="tagline">Work It</p>
+    <div class="brand-logos">
+        <img src="image/Google.png" alt="Brand 1" class="brand-logo"> <!-- Replace with actual logos -->
+        <img src="image/hollandia.png" alt="Brand 2" class="brand-logo">
+        <img src="image/netflix.png" alt="Brand 3" class="brand-logo">
+        <img src="image/iroko.png" alt="Brand 7" class="brand-logo">
+        <div class="i">
+<i>windflower</i> <br>
+<i>Bournvita,</i>   
+<i>action aid</i>
+<i>yellow brick road</i>
+        </div>    
     </div>
-</footer>
+    <div>
+        <p>
+            <i class="fas fa-map-marker-alt location-icon"></i>
+            20B,DELEARA STREET,OFF IJEGUN ,IKOTUN ROAD LAGOS
+        </p>
+        <p>&copy; 2024 Clarity Studio. All Rights Reserved.</p>
+    </div>
+    <div class="social-icons">
+        <a href="https://www.facebook.com/claritystudios?mibextid=ZbWKwL" class="social-icon" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://wa.link/ucc3fn" class="social-icon" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+        <a href="https://www.instagram.com/claritystudios1?igsh=ZGUzMzM3NWJiOQ==" class="social-icon" title="Instagram"><i class="fab fa-instagram"></i></a>
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>
+
 <script>
     // Close the navbar when a link is clicked
     $(document).ready(function() {

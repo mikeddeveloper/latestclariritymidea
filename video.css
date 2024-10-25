@@ -1,0 +1,35 @@
+body {
+    font-family: 'Arial', sans-serif;
+}
+.video-showcase {
+    text-align: center;
+    margin: 40px 0;
+}
+.video-showcase h2 {
+    font-size: 36px;
+    position: relative;
+    display: inline-block;
+    padding-bottom: 10px;
+}
+.video-showcase h2::after {
+    content: '';
+    display: block;
+    width: 60px; /* Width of underline */
+    height: 3px; /* Height of underline */
+    background-color: #007bff; /* Underline color */
+    margin: 0 auto; /* Center underline */
+    margin-top: 5px; /* Space between title and underline */
+}
+.video-container {
+    margin: 20px 0;
+}
+.video-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+}
+video {
+    width: 100%;
+    border-radius: 10px;
+}
