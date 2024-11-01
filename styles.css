@@ -55,7 +55,7 @@ h1 {
 
 
 .btn-thistle {
-    background-color: #fa0dfa; /* Thistle color */
+    background-color: #f85ff8; /* Thistle color */
 
             color:thistle; /* Text color */
         }
@@ -64,7 +64,7 @@ h1 {
             color:thistle;
         }
         .my-button {
-            background-color: #fd62fd; /* Darker thistle shade */
+            background-color: #f472f4; /* Darker thistle shade */
 
             border: none; /* No border */
             color: white; /* Text color */
