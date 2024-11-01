@@ -55,7 +55,8 @@ h1 {
 
 
 .btn-thistle {
-            background-color: #D8BFD8; /* Thistle color */
+    background-color: #f85ff8; /* Thistle color */
+
             color:thistle; /* Text color */
         }
     .btn-thistle:hover {
