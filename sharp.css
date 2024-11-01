@@ -2,7 +2,8 @@ body {
     font-family: 'Arial', sans-serif;
 }
 .footer {
-    background-color: thistle;
+      background-color: #B28BCB; /* Darker thistle shade */
+    ;
     color: white;
     padding: 40px 20px;
     text-align: center;
