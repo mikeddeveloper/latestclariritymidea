@@ -33,7 +33,7 @@
     width: 60px; /* Fixed width for icons */
     height: 60px; /* Fixed height for icons */
     border-radius: 50%; /* Rounded icons */
-    background-color: #007bff; /* Blue background for better visibility */
+    background-color: thistle; /* Blue background for better visibility */
     color: #fff; /* White icon color */
     text-align: center; /* Centering icon */
     line-height: 60px; /* Center the icon vertically */

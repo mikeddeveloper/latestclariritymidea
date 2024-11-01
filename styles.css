@@ -43,13 +43,39 @@ h1 {
     font-size: 3rem;
 }
 
-.btn-primary {
-    background-color: #007bff;
-    border-color: #007bff;
+.btn{
+    background-color: thistle;
+    border-color:thistle;
 }
 
 .btn-primary:hover {
-    background-color: #0056b3;
-    border-color: #0056b3;
+    background-color: thistle;
+    border-color: thistle;
 }
 
+
+.btn-thistle {
+            background-color: #D8BFD8; /* Thistle color */
+            color:thistle; /* Text color */
+        }
+    .btn-thistle:hover {
+            background-color: #D3A8D3; /* Darker shade for hover effect */
+            color:thistle;
+        }
+        .my-button {
+            background-color: thistle; /* Initial background color */
+            border: none; /* No border */
+            color: white; /* Text color */
+            padding: 15px 25px; /* Padding around the text */
+            text-align: center; /* Center the text */
+            text-decoration: none; /* No underline */
+            display: inline-block; /* Make it inline-block */
+            font-size: 16px; /* Font size */
+            cursor: pointer; /* Pointer cursor on hover */
+            border-radius: 5px; /* Rounded corners */
+            transition: background-color 0.3s; /* Smooth transition */
+        }
+
+        .my-button:hover {
+            background-color: lightcoral;
+        }
